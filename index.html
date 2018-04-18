@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/magda.bober01@gmail.com" method="POST">
+
+        <label for="name">Wpisz imię</label><br>
+        <input type="text" id="name" name="Imię" placeholder="Wpisz imię"><br>
+        <label for="surname">Wpisz nazwisko</label><br>
+        <input type="text" id="surname" name="Nazwisko" placeholder="Wpisz nazwisko"><br>
+        <label for="email">Wpisz email</label><br>
+        <input type="email" id="email" name="email" placeholder="Wpisz email"><br>
+        <label for="tel">Wpisz numer telefonu</label><br>
+        <input type="tel" id="tel" name="telefon" placeholder="Wpisz numer telefonu"><br>
+        <br>
+        <label for="miasto">Wybierz miasto</label><br>
+        <select name="Miasto" id="miasto"><br>
+            <option value="Kraków" selected>Kraków</option><br>
+            <option value="Warszawa">Warszawa</option><br>
+            <option value="Gdańsk">Gdańsk</option><br>
+        </select><br>
+        <br>
+        <label>Wybierz płeć</label><br>
+        <input type="radio" name="Płeć" value="Kobieta" checked>Kobieta<br>
+        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna<br>
+        <br>
+        <label>Zgoda na przetwarzanie danych osobowych:</label><br>
+        <input type="checkbox" name="zgoda" value="Tak" checked>TAK<br>
+        <input type="checkbox" name="zgoda" value="Nie">NIE<br>
+        <br>
+        <label for="msg">Wpisz wiadomość</label><br>
+        <textarea name="Wiadomość" id="msg" cols="30" rows="10" placeholder="Wpisz wiadomość"></textarea><br>
+        <input type="submit" value="Wyślij">
+
+    </form>
+
+</body>
+
+</html>
