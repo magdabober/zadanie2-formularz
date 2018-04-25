@@ -4,39 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <form action="https://formspree.io/magda.bober01@gmail.com" method="POST">
+    <form class="form" action="https://formspree.io/magda.bober01@gmail.com" method="POST">
 
-        <label for="imię">Wpisz imię</label><br>
-        <input type="text" id="imię" name="imię" placeholder="Wpisz imię"><br>
-        <label for="nazwisko">Wpisz nazwisko</label><br>
-        <input type="text" id="nazwisko" name="nazwisko" placeholder="Wpisz nazwisko"><br>
-        <label for="email">Wpisz email</label><br>
-        <input type="email" id="email" name="email" placeholder="Wpisz email"><br>
-        <label for="tel">Wpisz numer telefonu</label><br>
-        <input type="tel" id="tel" name="telefon" placeholder="Wpisz numer telefonu"><br>
-        <br>
-        <label for="miasto">Wybierz miasto</label><br>
-        <select name="miasto" id="miasto">
+        <label for="name">Imię</label>
+        <input type="text" id="name" name="name" placeholder="Wpisz imię" class="frame"><br>
+        <label for="surname">Nazwisko</label>
+        <input type="text" id="surname" name="surname" placeholder="Wpisz nazwisko" class="frame"><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Wpisz email" class="frame"><br>
+        <label for="tel">Numer telefonu</label>
+        <input type="tel" id="tel" name="telefon" placeholder="Wpisz numer telefonu" class="frame"><br>
+       
+        <label for="city">Wybierz miasto</label>
+        <select name="city" id="city" class="frame">
             <option value="Kraków" selected>Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
         </select>
         <p>Wybierz płeć</p>
-        <input type="radio" name="płeć" id="kobieta" value="kobieta" checked>
-        <label for="kobieta">Kobieta</label><br>
-        <input type="radio" name="płeć" id="mężczyzna" value="mężczyzna">
-        <label for="mężczyzna">Mężczyzna</label><br>
-        <p>Zgoda na przetwarzanie danych osobowych:</p>
-        <input type="checkbox" name="zgoda" id="tak" value="tak">
-        <label for="tak">Tak</label><br>
-        <br>
-        <label for="msg">Wpisz wiadomość</label><br>
-        <textarea name="wiadomość" id="msg" cols="30" rows="10" placeholder="Wpisz wiadomość"></textarea><br>
-        <input type="submit" value="Wyślij">
 
+        <input type="radio" name="gender" id="woman" value="woman" checked>
+        <label for="woman" class="gender">Kobieta</label>
+        <div class="clear"></div>
+        <input type="radio" name="gender" id="man" value="man">
+        <label for="man" class="gender">Mężczyzna</label>
+        <div class="clear"></div><br>
+        <input type="checkbox" name="agreement" id="yes" value="yes">
+        <p id="agreement-text">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu marketingu bezpośredniego dotyczącego produktów i usług oferowanych przez podmioty, wykonywanego przy użyciu telekomunikacyjnych urządzeń końcowych oraz automatycznych systemów wywołujących , zgodnie z art. 172 ustawy z dnia 16 lipca 2004r. Prawo telekomunikacyjne (Dz. U. z 2014 r. poz. 243 ze zm.)</p>
+        <div class="clear"></div><br>
+        <label for="msg">Wpisz wiadomość</label>
+        <textarea name="message" id="msg" cols="30" rows="10" placeholder="Wpisz wiadomość" class="frame"></textarea><br>
+        <input type="submit" id="submit" value="Wyślij">
+        <br>
     </form>
 
 </body>
